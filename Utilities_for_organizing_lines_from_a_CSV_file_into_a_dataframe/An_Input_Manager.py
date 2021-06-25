@@ -18,7 +18,7 @@ class An_Input_Manager:
     # check checks the appropriateness of a vector of command line arguments of command-line arguments for organizing lines from a CSV file into a dataframe.
     # -------------------------------------------------------------------------------------------------------------------------------------------------------
 
-    def check(self, the_vector_of_command_line_arguments):
+    def checks(self, the_vector_of_command_line_arguments):
 
         if (not isinstance(the_vector_of_command_line_arguments, list)) or (not all(isinstance(the_argument, str) for the_argument in the_vector_of_command_line_arguments)):
             raise A_Check_Command_Line_Arguments_Exception("An input manager did not receive a vector of strings.")
