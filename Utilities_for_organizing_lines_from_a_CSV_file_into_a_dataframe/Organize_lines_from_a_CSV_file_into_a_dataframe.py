@@ -28,7 +28,7 @@ from Exceptions.An_Invalid_Line_Indices_Exception import *
 def main():
 
     try:
-        An_Input_Manager().check(sys.argv)
+        An_Input_Manager().checks(sys.argv)
     except A_Check_Command_Line_Arguments_Exception as the_invalid_number_of_command_line_arguments_exception:
         print(the_invalid_number_of_command_line_arguments_exception)
         exit()
